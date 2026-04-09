@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "./Header.module.css";
+import ThemeToggle from "./ThemeToggle";
 
 const name = "Betsy Arinze";
 const titles = ["Software Engineer", "Product Engineer", "Creative"];
@@ -33,6 +34,9 @@ function Header() {
             {titles[index]}
           </p>
         </div>
+      </div>
+      <div className={styles.themeButton}>
+        <ThemeToggle />
       </div>
     </header>
   );

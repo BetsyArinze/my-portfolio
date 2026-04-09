@@ -5,11 +5,24 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --bg: #ffffff;
+  --card-bg: white;
+  --text-primary: #404040;
+  --text-secondary: #a3a3a3;
+}
 
 body {
   font-family: "Georgia", serif;
-  background: #ffffff;
-  color: #0f0f0f;
+  background: var(--bg);
+  color: var(--text-primary);
+}
+
+body.dark-mode {
+  --bg: #121212;
+  --card-bg: #1e1e1e;
+  --text-primary: #e5e5e5;
+  --text-secondary: #a3a3a3;
 }
 
 .container {

@@ -7,9 +7,12 @@
 }
 :root {
   --bg: #ffffff;
+  --bg-primary: #220a4b;
+  --bg-secondary: #8c61f1;
   --card-bg: white;
   --text-primary: #404040;
-  --text-secondary: #a3a3a3;
+  --text-secondary: #a1a1a1;
+  --contrast: #d4d4d4;
 }
 
 body {
@@ -20,12 +23,24 @@ body {
 
 body.dark-mode {
   --bg: #121212;
+  --bg-primary: #8c61f1;
+  --bg-secondary: #220a4b;
   --card-bg: #1e1e1e;
-  --text-primary: #e5e5e5;
-  --text-secondary: #a3a3a3;
+  --text-primary: #d4d4d4;
+  --text-secondary: #a1a1a1;
+  --contrast: #404040;
 }
 
 .container {
   text-align: center;
   margin-top: 20vh;
+}
+
+.layout {
+  display: flex;
+  height: calc(100vh - 136px);
+}
+
+.content {
+  flex: 1;
 }

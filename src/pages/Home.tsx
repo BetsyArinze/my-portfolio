@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./Home.module.css";
 import {
   HiOutlineFolderOpen,
@@ -11,13 +12,13 @@ function Home() {
     <div className={styles.container}>
       <div className={styles.cardContainer}>
         <div className={styles.doubleCard}>
-          <div className={styles.card}>
+          <Link to="/about" className={styles.card}>
             <div className={styles.cardHeader}>
               <HiOutlineUser className={styles.cardIcon} />
               <span className={styles.cardTitle}>About</span>
             </div>
             <span className={styles.cardDescription}>A bit about myself</span>
-          </div>
+          </Link>
 
           <div className={styles.card}>
             <div className={styles.cardHeader}>

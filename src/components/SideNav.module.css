@@ -1,0 +1,76 @@
+.container {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 50;
+}
+
+.navBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+  height: 58px;
+  padding: 8px 8px;
+  margin-top: 1rem;
+  margin-left: 8px;
+  margin-right: auto;
+  border-radius: 1rem;
+  border: 1px solid #ccc;
+  backdrop-filter: blur(12px);
+}
+
+.active {
+  background-color: var(--bg-primary);
+  border-radius: 9999px;
+  color: var(--contrast);
+}
+
+.nav {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.cardIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.nav:hover:not(.active) {
+  background-color: var(--bg-secondary);
+  width: 56px;
+  height: 56px;
+  border-radius: 9999px;
+}
+
+.nav.active:hover {
+  width: 56px;
+  height: 56px;
+}
+
+.rotated {
+  transform: rotate(-40deg);
+}
+
+@media (min-width: 768px) {
+  .container {
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .navBox {
+    flex-direction: column;
+    justify-content: center;
+    width: 58px;
+    height: max-content;
+  }
+}

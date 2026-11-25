@@ -24,7 +24,7 @@ const SideNav = () => {
               className={`${styles.nav} ${isActive ? styles.active : ""}`}
             >
               <Icon
-                className={`${styles.cardIcon} ${nav.name === "Contact" ? styles.rotated : ""}`}
+                className={`${styles.icon} ${nav.name === "Contact" ? styles.rotated : ""}`}
               />
             </Link>
           );
@@ -40,6 +40,6 @@ const list = [
   { name: "Project", link: "/", icon: HiOutlineFolderOpen },
   { name: "About", link: "/about", icon: HiOutlineUser },
   { name: "Home", link: "/", icon: HiOutlineHome },
-  { name: "Work", link: "/", icon: HiOutlineBriefcase },
+  { name: "Work", link: "/work-experience", icon: HiOutlineBriefcase },
   { name: "Contact", link: "/", icon: HiOutlinePaperAirplane },
 ];

@@ -23,12 +23,6 @@
   backdrop-filter: blur(12px);
 }
 
-.active {
-  background-color: var(--bg-primary);
-  border-radius: 9999px;
-  color: var(--contrast);
-}
-
 .nav {
   display: flex;
   width: 40px;
@@ -37,9 +31,16 @@
   justify-content: center;
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  color: var(--text-primary);
 }
 
-.cardIcon {
+.active {
+  background-color: var(--bg-primary);
+  border-radius: 9999px;
+  color: var(--contrast);
+}
+
+.icon {
   width: 24px;
   height: 24px;
 }

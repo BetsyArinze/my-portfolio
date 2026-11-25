@@ -20,7 +20,7 @@ function Home() {
             <span className={styles.cardDescription}>A bit about myself</span>
           </Link>
 
-          <div className={styles.card}>
+          <Link to="/work-experience" className={styles.card}>
             <div className={styles.cardHeader}>
               <HiOutlineBriefcase className={styles.cardIcon} />
               <span className={styles.cardTitle}>Work Experience</span>
@@ -28,7 +28,7 @@ function Home() {
             <span className={styles.cardDescription}>
               My career as a Software Engineer
             </span>
-          </div>
+          </Link>
         </div>
 
         <div className={styles.card}>
